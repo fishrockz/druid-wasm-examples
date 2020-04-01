@@ -23,10 +23,10 @@ pub fn main() {
         widget::{FillStrat, Flex, Image, ImageData, WidgetExt},
         AppLauncher, Color, Widget, WindowDesc,
     };
+    use image;
 
     fn ui_builder() -> impl Widget<u32> {
-        let png_data = ImageData::from_file("examples/PicWithAlpha.png").unwrap();
-
+        let png_data = ImageData::default();
         let mut col = Flex::column();
 
         col.add_flex_child(

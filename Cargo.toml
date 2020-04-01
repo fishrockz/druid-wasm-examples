@@ -18,14 +18,14 @@ default = [ "console_error_panic_hook", "console_log" ]
 #wasm_log = [ "console_log", "druid/console_log" ]
 
 [dependencies]
-druid = { git = "https://github.com/elrnv/druid.git", features = ["image"] }
+druid = { git = "https://github.com/fishrockz/druid.git", branch="willsalmon/nonblackdefault", features = ["image"] }
 wasm-bindgen = "0.2.30"
 console_error_panic_hook = { version = "0.1.1", optional = true }
 instant = { version = "0.1", features = [ "wasm-bindgen" ] }
 log = "0.4.8"
 cfg-if = "0.1.10"
 console_log = { version = "0.1.2", optional = true }
-
+image = "0.23.2"
 [dependencies.web-sys]
 version = "0.3"
 features = ["console"]
